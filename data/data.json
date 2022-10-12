@@ -1,0 +1,10 @@
+[
+    {"id":1,"nombreApellido":"Pedro Gomez" , "CantComensales": 10},
+    {"id":2,"nombreApellido":"Martin Casti", "CantComensales": 20},
+    {"id":3,"nombreApellido":"Carla Quevedo" , "CantComensales": 30},
+    {"id":4,"nombreApellido":"Juan Blanco", "CantComensales":50},
+    {"id":5,"nombreApellido":"Pedro Ruli" , "CantComensales": 10},
+    {"id":6,"nombreApellido":"Carlos Char" , "CantComensales": 4},
+    {"id":7,"nombreApellido":"Cosme Fulanito" , "CantComensales":6}
+    
+]

@@ -9,27 +9,34 @@
 <body>
 
 <!-- Inicia el header -->
-    <header>    
-
+    <header>
+            <div id="clock">
+                <h3>Buenos Aires</h3>
+                <output>00:00:00</output>
+            </div>
     </header>
 <!-- Finaliza el header -->
 
 <!-- Inicia el main -->
     <main>
-        <div id="contenedor">
-            <button id="btnEliminar">Eliminar Fila</button>
-        </div>
+        
         <div id="Bienvenida">
             <h1>Bienvenido a la pagina de fila virtual de SittingApp</h1>
+            <hr/>
+            <div id="contenedor">
+                <button id="btnEliminar">Consultar Fula virtual</button>
+            </div>
+            
         </div>
-        <div>
+        
+        <!-- <div>
             <form id="Registro">
                 <input type="text" placeholder="Ingrese su nombre" id="nombre">
                 <input type="text" placeholder="Ingrese su apellido" id="apellido">
                 <input type="number" placeholder="Ingrese cantida de comensales" id="cantComensales">
                 <input type="submit" value="Enviar" >
             </form>
-        </div>
+        </div> -->
 
         <div id="filaVirtual">
 
@@ -42,7 +49,7 @@
     </footer>
 
 <!-- Fin del footer  -->
-   <script src="home.js"></script> 
-   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+   <script src="home.js"></script>
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
