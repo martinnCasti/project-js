@@ -99,6 +99,7 @@ botonEliminar.addEventListener("click", () =>{
 
 })
 
+botonEliminar
 
 
 
