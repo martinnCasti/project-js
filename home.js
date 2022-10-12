@@ -15,9 +15,31 @@ class Cliente {
 
     }
 }
-let contenedor = document.getElementById("contenedor");
 
-let formFila = document.getElementById("Registro");
+const consultarReservas = async () => {
+    const response = await fetch("./data/data.json");
+    const data = await response.json();
+    let contenedor = document.getElementById("contenedor");
+
+    data.forEach((element) => {
+        let div = document.createElement("div");
+        div.innerHTML =`
+        <h2>Nro: ${element.id}
+        <h3>Nombre y apellido: ${element.nombreApellido}
+        <h3>Cantidad de comensales: ${element.CantComensales}
+        <hr/>
+        
+        `;
+
+        contenedor.append(div);
+    }
+    )
+}
+
+
+//let contenedor = document.getElementById("contenedor");
+
+//let formFila = document.getElementById("Registro");
 
 
 // formFila.addEventListener("submit", (e)=>{
@@ -69,26 +91,13 @@ let formFila = document.getElementById("Registro");
 //     }
 // })
 
-let botonEliminar = document.getElementById("btnEliminar")
+let botonEliminar = document.getElementById("btnEliminar");
 
 botonEliminar.addEventListener("click", () =>{
-    fetch("./data/data.json")
-    .then(response => response.json())
-    .then(data =>{
-        data.forEach((element) => {
-            let div = document.createElement("div");
-            div.innerHTML =`
-            <h2>Nro: ${element.id}
-            <h3>Nombre y apellido: ${element.nombreApellido}
-            <h3>Cantidad de comensales: ${element.CantComensales}
-            <hr/>
-            
-            `;
-    
-            contenedor.append(div);    
-        });
 
-    });
+    consultarReservas();    
+
+})
 
 
 
@@ -113,7 +122,7 @@ botonEliminar.addEventListener("click", () =>{
     //     )
     //     }
     // })  
-})
+
 
 
     
@@ -142,4 +151,4 @@ botonEliminar.addEventListener("click", () =>{
 
 // let cliente1 = localStorage.setItem("cliente1", jsonCli);
 
-// console.log(localStorage); 
+// console.log(localStorage);
