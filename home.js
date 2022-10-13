@@ -91,17 +91,13 @@ const consultarReservas = async () => {
 //     }
 // })
 
-let botonEliminar = document.getElementById("btnEliminar");
+let botonConsultar = document.getElementById("btnConsultar");
 
-botonEliminar.addEventListener("click", () =>{
+botonConsultar.addEventListener("click", () =>{
 
     consultarReservas();    
 
 })
-
-botonEliminar
-
-
 
 
 
