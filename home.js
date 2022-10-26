@@ -16,30 +16,54 @@ class Cliente {
     }
 }
 
+//Generamos el fetch para la consulta la api local
 const consultarReservas = async () => {
+
+    
     const response = await fetch("./data/data.json");
     const data = await response.json();
     let contenedor = document.getElementById("contenedor");
 
     data.forEach((element) => {
-        let div = document.createElement("div");
+        let div = document.createElement("contenedor");
         div.innerHTML =`
-        <h2>Nro: ${element.id}
-        <h3>Nombre y apellido: ${element.nombreApellido}
+        <h2>Nombre: ${element.nombre}
+        <h3>Apellido: ${element.apellido}
         <h3>Cantidad de comensales: ${element.CantComensales}
         <hr/>
+        
         
         `;
 
         contenedor.append(div);
     }
     )
+    Swal.fire({
+        position: 'top-mid',
+        icon: 'success',
+        title: 'Se ha traido los datos correctamente!',
+        showConfirmButton: false,
+        timer: 1500
+      })
 }
 
 
-//let contenedor = document.getElementById("contenedor");
+//Traigo el btnConsultar del html
+let botonConsultar = document.getElementById("btnConsultar");
 
-//let formFila = document.getElementById("Registro");
+botonConsultar.addEventListener("click", () =>{
+
+    consultarReservas();    
+
+})
+
+
+
+
+
+// let contenedor = document.getElementById("contenedor");
+
+
 
 
 // formFila.addEventListener("submit", (e)=>{
@@ -91,61 +115,25 @@ const consultarReservas = async () => {
 //     }
 // })
 
-let botonConsultar = document.getElementById("btnConsultar");
-
-botonConsultar.addEventListener("click", () =>{
-
-    consultarReservas();    
-
-})
-
-
-
-    // Swal.fire({
-    //     title: 'Seguro que desea eliminar la fila generada?',
-    //     icon: 'warning',
-    //     showCancelButton: true,
-    //     confirmButtonColor: '#3085d6',
-    //     cancelButtonColor: '#d33',
-    //     confirmButtonText: 'Si, deseo eliminarla'
-    //     }).then((result) => {
-    //     if (result.isConfirmed) {
-    //         localStorage.clear();
-    //         filaVirtual.innerHTML= " ";
-    //         Swal.fire(
-    //         'Elimnada!',
-    //         'La fila ha sido eliminada',
-    //         'success'
-    //     )
-    //     }
-    // })  
+//     Swal.fire({
+//         title: 'Seguro que desea eliminar la fila generada?',
+//         icon: 'warning',
+//         showCancelButton: true,
+//         confirmButtonColor: '#3085d6',
+//         cancelButtonColor: '#d33',
+//         confirmButtonText: 'Si, deseo eliminarla'
+//         }).then((result) => {
+//         if (result.isConfirmed) {
+//             localStorage.clear();
+//             filaVirtual.innerHTML= " ";
+//             Swal.fire(
+//             'Elimnada!',
+//             'La fila ha sido eliminada',
+//             'success'
+//         )
+//         }
+//     })  
 
 
 
-    
-
-
-    // let imputs = e.target.children;
-    // reservas.push(imputs[0].value);
-    // reservas.push(imputs[1].value);
-    // reservas.push(imputs[2].value);
-
-    // reservas.forEach(item => {
-
-    //     let reservaGenerada = document.createElement("div");
-    //     reservaGenerada.innerHTML = item;
-    //     filaVirtual.append(reservaGenerada);
-        
-    // })
-
-    // imputs[0].value= "";
-    // imputs[1].value= "";
-    // imputs[2].value= "";
-
-// let cliente = new Cliente(nombre, apellido, cantComensales);
-
-// let jsonCli = JSON.stringify(cliente);
-
-// let cliente1 = localStorage.setItem("cliente1", jsonCli);
-
-// console.log(localStorage);
+ 

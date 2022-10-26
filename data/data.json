@@ -1,10 +1,14 @@
 [
-    {"id":1,"nombreApellido":"Pedro Gomez" , "CantComensales": 10},
-    {"id":2,"nombreApellido":"Martin Casti", "CantComensales": 20},
-    {"id":3,"nombreApellido":"Carla Quevedo" , "CantComensales": 30},
-    {"id":4,"nombreApellido":"Juan Blanco", "CantComensales":50},
-    {"id":5,"nombreApellido":"Pedro Ruli" , "CantComensales": 10},
-    {"id":6,"nombreApellido":"Carlos Char" , "CantComensales": 4},
-    {"id":7,"nombreApellido":"Cosme Fulanito" , "CantComensales":6}
-    
+    {"nombre":"Pedro","apellido":"Gomez" , "CantComensales": 10},
+    {"nombre":"Matin","apellido":"Casti", "CantComensales": 20},
+    {"nombre":"Carla","apellido":"Quevedo" , "CantComensales": 30},
+    {"nombre":"Juan","apellido":"Blanco", "CantComensales":50},
+    {"nombre":"Pedro","apellido":"Ruli" , "CantComensales": 10},
+    {"nombre":"Carlos","apellido":"Char" , "CantComensales": 4},
+    {"nombre":"Cosme","apellido":"Fulanito" , "CantComensales":6},
+    {"nombre":"Carlos","apellido":"acuna" , "CantComensales":10},
+    {"nombre":"Martin","apellido":"Petrov" , "CantComensales":4},
+    {"nombre":"Han","apellido":"Parker" , "CantComensales":2},
+    {"nombre":"Rei","apellido":"Fert" , "CantComensales":2},
+    {"nombre":"Rumaldo","apellido":"Cabric" , "CantComensales":5}
 ]
