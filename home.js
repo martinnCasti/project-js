@@ -32,7 +32,6 @@ const consultarReservas = async () => {
         <h3>Cantidad de comensales: ${element.CantComensales}
         <hr/>
         
-        
         `;
 
         contenedor.append(div);
@@ -60,3 +59,8 @@ botonConsultar.addEventListener("click", () =>{
 
 
 
+
+
+
+
+ 
